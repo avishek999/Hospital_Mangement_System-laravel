@@ -1,6 +1,6 @@
 # Hospital Management System
 
-![Project Logo](/path/to/your/logo.png)
+![Project Logo](https://trisya.com/myimg/Health%20Management.gif)
 
 A robust and user-friendly Hospital Management System built with the Laravel framework. This system is designed to streamline the management of hospitals, clinics, and healthcare facilities, providing tools for efficient patient management, staff administration, appointment scheduling, and more.
 
@@ -36,20 +36,23 @@ These instructions will help you set up and run the Hospital Management System o
 
 
 2. Change directory to the project folder:
-
+   ```bash
     cd Hospital_Mangement_System-laravel
 
+
+
 3. Install project dependencies:
-
+   ```bash
     composer install
-    composer install
 
-4.    Create a .env file by copying the exampl
 
+
+4.    Create a .env file by copying the example
+   ```bash
     cp .env.example .env
 
 5. Configure your database connection in the .env file:
-
+   ```bash
   DB_CONNECTION=mysql
   DB_HOST=your_db_host
   DB_PORT=your_db_port
@@ -58,11 +61,11 @@ These instructions will help you set up and run the Hospital Management System o
   DB_PASSWORD=your_db_password
 
 6. Run database migrations and seed the database: 
-
+   ```bash
    php artisan migrate --seed
 
 7. Start the Laravel development server:
-
+   ```bash
    php artisan serve
    Access the Hospital Management System in your browser at http://localhost:8000.
 
