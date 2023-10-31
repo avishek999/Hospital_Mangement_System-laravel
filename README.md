@@ -42,12 +42,13 @@ These instructions will help you set up and run the Hospital Management System o
     composer install
 
 
-4. Create a .env file by copying the example
+4. Create a .env file by copying the example:
+   ```bash
 cp .env.example .env
 
 5. Configure your database connection in the .env file
 
- Update the placeholders with your actual database details
+   ```bash
 DB_CONNECTION=mysql
 DB_HOST=your_db_host
 DB_PORT=your_db_port
@@ -56,12 +57,14 @@ DB_USERNAME=your_db_username
 DB_PASSWORD=your_db_password
 
 6. Run database migrations and seed the database
+   ```bash
 php artisan migrate --seed
 
 7. Start the Laravel development server
+   ```bash
 php artisan serve
 
-# Access the Hospital Management System in your browser at http://localhost:8000
+ Access the Hospital Management System in your browser at http://localhost:8000
 
 ### Usage
 Visit the Hospital Management System dashboard and use the intuitive interface to manage patients, appointments, staff, and other features.
