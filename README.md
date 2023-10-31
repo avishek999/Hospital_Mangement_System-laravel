@@ -42,9 +42,10 @@ These instructions will help you set up and run the Hospital Management System o
     composer install
 
 
-4.    Create a .env file by copying the example
+4.    Create a .env file by copying the example:
    ```bash
     cp .env.example .env
+
 
 5. Configure your database connection in the .env file:
    ```bash
