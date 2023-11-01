@@ -15,6 +15,11 @@
 
 <body>
   <h1 class="text-center"> Welcome to my Hospital</h1>
+
+  <div class="text-center">
+       <a class="btn btn-primary mt-5" href="login">Log In</a>
+       <a class="btn btn-primary mt-5" href="register">Regester</a>
+  </div>
 </body>
 
 </html>
