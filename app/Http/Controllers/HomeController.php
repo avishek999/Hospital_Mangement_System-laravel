@@ -19,6 +19,9 @@ class HomeController extends Controller
                return view("admin.home");
             }
         }
+        else{
+            return redirect()->back();
+        }
     } 
 public function index()
 {
