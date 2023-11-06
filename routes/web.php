@@ -38,3 +38,5 @@ Route::middleware([
     })->name('dashboard');
 });
 Route::get('/add_doctor_view', [adminController::class, 'addview']);
+Route::post('/upload_doctor', [adminController::class, 'upload']);
+

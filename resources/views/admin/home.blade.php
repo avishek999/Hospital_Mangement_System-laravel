@@ -30,29 +30,96 @@
       <!-- partial -->
     @include('admin.navbar')
         <!-- partial -->
-    @include('admin.body')
-     
+<div class="container-fluid page-body-wrapper">
+  <form action="{{url('upload_doctor')}}" method="post" enctype="multipart/form-data">
+    @csrf
+
+  <div class="container">
+    <section class="h-100 ">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4 h-100">
+          <div class="row g-0">
+          <div class="col-xl-6 d-none d-xl-block">
+              <img src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=740&t=st=1699247779~exp=1699248379~hmac=cded330acb9650003ca12011f8f0014f775e4649bd58a0dd49e91111bc4a82e2"
+                alt="Sample photo" class="img.fluid  "
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; width:4rem; height:45rem;" />
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black bg-light">
+                <h3 class="mb-5 text-uppercase">Doctors registration form</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1m" style="color:black" placeholder="Write Doctor's Name" class="form-control form-control-lg bg-light" name="name" />
+                      <label class="form-label" for="form3Example1m" >Doctors name</label>
+                    </div>
+                    </div>
+
+                
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="number" id="form3Example1m1"placeholder="Write Your's Phone Number" class="form-control form-control-lg bg-light" name="phone" />
+                      <label class="form-label" for="form3Example1m1">phone number</label>
+                    </div>
+                    </div>
+                  </div>
+
+            
+               
+
+                <div class="row">
+                  <div class="col mb-4">
+
+                    <select class="select" name="Speaciality">
+                      <option value="1">Speaciality</option>
+                      <option value="skin">skin</option>
+                      <option value="heart">heart</option>
+                      <option value="eye">eye</option>
+                      <option value="nose">nose</option>
+
+                    </select>
+
+                  </div>
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example9" class="form-control form-control-lg bg-light" placeholder="Enter Room number" name="room" />
+                  <label class="form-label"  for="form3Example9">Room No</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="file" id="form3Example90" class="form-control form-control-lg " name="file" />
+                  <label class="form-label" for="form3Example90">Profile Picture</label>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example97" class="form-control form-control-lg" name="email"/>
+                  <label class="form-label" for="form3Example97">Email ID</label>
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button  class="btn btn-warning btn-lg ms-2" name="submit">SUBMIT FORM</button>
+                  <!-- <button  class="btn btn-warning btn-lg ms-2" name="submit">Submit form</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+</section>
+    </div>
+</div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="admin/assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="admin/assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="admin/assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="admin/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="admin/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="admin/assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-    <script src="admin/assets/js/jquery.cookie.js" type="text/javascript"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="admin/assets/js/off-canvas.js"></script>
-    <script src="admin/assets/js/hoverable-collapse.js"></script>
-    <script src="admin/assets/js/misc.js"></script>
-    <script src="admin/assets/js/settings.js"></script>
-    <script src="admin/assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="admin/assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
+    @include('admin.script')
   </body>
 </html>
