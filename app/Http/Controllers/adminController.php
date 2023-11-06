@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Doctor;.0
+use App\Models\Doctor;
 use Laravel\Tinker\ClassAliasAutoloader;
 
 class adminController extends Controller
@@ -17,10 +17,11 @@ class adminController extends Controller
    $image = $request->file;
    $imagename=time().'.'.$image-> getClientOriginalExtension();
    $request->file->move('doctorimage',$imagename);
-   $doctor->image=$imagename;     
+   $doctor->file=$imagename;     
    $doctor->name= $request->name;
    $doctor->phone= $request->phone;
-   $doctor->speciality= $request->speciality;
+   $doctor->Speaciality= $request->Speaciality;
+   $doctor->room= $request->room;
    $doctor->email= $request->email;
    $doctor->save();
    return redirect()->back();             

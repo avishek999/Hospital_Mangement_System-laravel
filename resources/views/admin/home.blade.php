@@ -44,7 +44,7 @@
           <div class="col-xl-6 d-none d-xl-block">
               <img src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=740&t=st=1699247779~exp=1699248379~hmac=cded330acb9650003ca12011f8f0014f775e4649bd58a0dd49e91111bc4a82e2"
                 alt="Sample photo" class="img.fluid  "
-                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; width:4rem; height:45rem;" />
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; width:70rem; height:45rem;" />
             </div>
             <div class="col-xl-6">
               <div class="card-body p-md-5 text-black bg-light">
@@ -98,7 +98,7 @@
 
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example97" class="form-control form-control-lg" name="email"/>
+                  <input type="email" id="form3Example97" class="form-control form-control-lg bg-light" name="email"/>
                   <label class="form-label" for="form3Example97">Email ID</label>
                 </div>
 
