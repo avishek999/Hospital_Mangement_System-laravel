@@ -17,7 +17,7 @@ class adminController extends Controller
    $image = $request->file;
    $imagename=time().'.'.$image-> getClientOriginalExtension();
    $request->file->move('doctorimage',$imagename);
-   $doctor->file=$imagename;     
+   $doctor->profile=$imagename;     
    $doctor->name= $request->name;
    $doctor->phone= $request->phone;
    $doctor->Speaciality= $request->Speaciality;
